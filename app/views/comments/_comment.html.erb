@@ -1,4 +1,11 @@
-<article data-user-id="<%= comment.user.id %>">
-  <h3>Comment by <%= comment.user.name %></h3>
-  <p><%= comment.content %></p>
+<article class="comment" data-user-id="<%= comment.user.id %>">
+  <div class="content">
+    <a class="author"><%= comment.user.name %></a>
+    <div class="metadata">
+      <span class="date"><%= l comment.created_at, format: :short %></span>
+    </div>
+    <div class="text">
+      <%= comment.content %>
+    </div>
+  </div>
 </article>

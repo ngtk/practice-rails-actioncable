@@ -1,9 +1,11 @@
-<h1>Messages</h1>
+<div class="ui text container">
+  <h1 class="ui dividing header">Messages</h1>
 
-<p>
-  <ul>
-    <% @messages.each do |message| %>
-      <li><%= link_to message.title, message %></li>
-    <% end %>
-  </ul>
-</p>
+  <p>
+    <ul class="ui list">
+      <% @messages.each do |message| %>
+        <li><%= link_to message.title, message %></li>
+      <% end %>
+    </ul>
+  </p>
+</div>

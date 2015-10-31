@@ -1,4 +1,6 @@
-<%= form_for [ message, Comment.new ], remote: true do |form| %>
-  <%= form.text_area :content, size: '100x20' %><br>
-  <%= form.submit 'Post comment' %>
+<%= form_for [ message, Comment.new ], remote: true, html: { class: 'ui form' } do |form| %>
+  <div class="field">
+    <%= form.text_area :content %>
+  </div>
+  <%= form.submit 'Post comment', class: 'ui button' %>
 <% end %>
