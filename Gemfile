@@ -16,6 +16,10 @@ gem 'turbolinks'
 
 gem 'jbuilder', '~> 2.0'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-semantic'
+end
+
 group :development, :test do
   gem 'byebug'
 end

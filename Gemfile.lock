@@ -104,6 +104,7 @@ GIT
 
 GEM
   remote: https://rubygems.org/
+  remote: https://rails-assets.org/
   specs:
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -156,6 +157,9 @@ GEM
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
+    rails-assets-jquery (2.1.4)
+    rails-assets-semantic (2.1.4)
+      rails-assets-jquery (>= 1.8)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.6)
@@ -205,6 +209,7 @@ DEPENDENCIES
   jquery-rails
   puma
   rails!
+  rails-assets-semantic!
   sass-rails (~> 5.0)
   spring
   sprockets-rails!
@@ -214,4 +219,4 @@ DEPENDENCIES
   web-console!
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
