@@ -8,3 +8,5 @@ ice   = User.create! name: 'Ice Cube'
 
 Message.create! title: 'Tha Shiznit', content: 'Poppin, stoppin, hoppin like a rabbit', user: snoop
 Message.create! title: 'Hypnotize ', content: 'Hah, sicker than your average Poppa', user: big
+
+Document.create! title: 'Farewell Party', content: 'Farewell Party...'
