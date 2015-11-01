@@ -1,0 +1,8 @@
+<div class="ui container">
+  <h1 class="ui dividing header"><%= @document.title %></h1>
+  <%= form_for @document, remote: true, html: { class: 'ui form' } do |form| %>
+    <div class="field">
+      <%= form.text_area :content, 'data-channel' => 'document', 'data-document-id' => @document.id %>
+    </div>
+  <% end %>
+</div>

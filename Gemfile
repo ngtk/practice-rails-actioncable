@@ -26,5 +26,6 @@ end
 
 group :development do
   gem 'web-console', github: 'rails/web-console'
+  gem 'pry-remote'
   gem 'spring'
 end
